@@ -1,0 +1,32 @@
+.App-logo {
+  width: 100%;
+}
+  
+.text {
+  font-size: 14px;
+  color:  #fff;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.text-1 {
+  font-size: 20px;
+}
+
+.image-icon {
+  height: 90%;
+  margin: 10px;
+}
+
+.imge {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40% 40%;
+  height: 30vmax;
+}
+
+@media (max-width: 900px) {
+  .image-icon {
+    height: 50%;
+  }
+}

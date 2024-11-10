@@ -16,7 +16,6 @@ import Avatar from './image/avatar.png';
 import './Menu.css';
 
 const pages = ['Главная','Проекты', 'Навыки', 'Контакты'];
-
 const paths = ["","project", "skills", "contact"];
 
 function ResponsiveAppBar() {
