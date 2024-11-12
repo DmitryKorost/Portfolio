@@ -24,47 +24,47 @@ export default function SimpleSliderSimple() {
   return (
     <Slider {...settings} >
       <div>
-        <img src={Simple1} className="image_slider"/>
+        <img src={Simple1} className="image_slider" alt="not image"/>
         <h3>Внешний вид</h3>
       </div>
       <div>
-        <img src={Simple2}  className="image_slider"/>
+        <img src={Simple2}  className="image_slider" alt="not image"/>
         <h3>Внешний вид</h3>
       </div>
       <div>
-        <img src={Simple3}  className="image_slider"/>
+        <img src={Simple3}  className="image_slider" alt="not image"/>
         <h3>Внешний вид</h3>
       </div>
       <div>
-        <img src={SimpleCod1}  className="image_slider"/>
+        <img src={SimpleCod1}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod2}  className="image_slider"/>
+        <img src={SimpleCod2}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod3}  className="image_slider"/>
+        <img src={SimpleCod3}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod4}  className="image_slider"/>
+        <img src={SimpleCod4}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod5}  className="image_slider"/>
+        <img src={SimpleCod5}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod6}  className="image_slider"/>
+        <img src={SimpleCod6}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod7}  className="image_slider"/>
+        <img src={SimpleCod7}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={SimpleCod8}  className="image_slider"/>
+        <img src={SimpleCod8}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
     </Slider>
