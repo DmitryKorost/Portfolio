@@ -1,4 +1,3 @@
-import Slider from "react-slick";
 import './slider.css';
 import Learn1 from './imageProject/Learn1.jpg';
 import Learn2 from './imageProject/Learn2.jpg';
@@ -6,36 +5,37 @@ import LearnCod1 from './imageProject/LearnCod1.jpg';
 import LearnCod2 from './imageProject/LearnCod2.jpg';
 import LearnCod3 from './imageProject/LearnCod3.jpg';
 
-export default function SimpleSliderLearn() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+const images = [Learn1, Learn2, LearnCod1, LearnCod2, LearnCod3];
+
+const zoomOutProperties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  scale: 0.4,
+  arrows: true
+};
+
+const Slideshow = () => {
   return (
-    <Slider {...settings} >
-      <div>
-        <img src={Learn1} className="image_slider" alt="not image"/>
-        <h3>Внешний вид</h3>
-      </div>
-      <div>
-        <img src={Learn2}  className="image_slider" alt="not image"/>
-        <h3>Внешний вид</h3>
-      </div>
-      <div>
-        <img src={LearnCod1}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={LearnCod2}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={LearnCod3}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-    </Slider>
+    <div className="slide-container">
+      <Zoom {...zoomOutProperties}>
+        {images.map((each, index) => (
+          <img key={index} style={{ height: "70%" }} src={each} />
+        ))}
+      </Zoom>
+    </div>
+  );
+};
+
+function SimpleSliderLearn() {
+  return (
+    <div className="App">
+      <Slideshow />
+    </div>
   );
 }
+
+export default SimpleSliderLearn;

@@ -1,4 +1,3 @@
-import Slider from "react-slick";
 import './slider.css';
 import Simple1 from './imageProject/Simple1.jpg';
 import Simple2 from './imageProject/Simple2.jpg';
@@ -12,60 +11,37 @@ import SimpleCod6 from './imageProject/SimpleCod6.jpg';
 import SimpleCod7 from './imageProject/SimpleCod7.jpg';
 import SimpleCod8 from './imageProject/SimpleCod8.jpg';
 
-export default function SimpleSliderSimple() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+const images = [Simple1, Simple2, Simple3, SimpleCod1, SimpleCod2, SimpleCod3, SimpleCod4, SimpleCod5, SimpleCod6, SimpleCod7, SimpleCod8];
+
+const zoomOutProperties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  scale: 0.4,
+  arrows: true
+};
+
+const Slideshow = () => {
   return (
-    <Slider {...settings} >
-      <div>
-        <img src={Simple1} className="image_slider" alt="not image"/>
-        <h3>Внешний вид</h3>
-      </div>
-      <div>
-        <img src={Simple2}  className="image_slider" alt="not image"/>
-        <h3>Внешний вид</h3>
-      </div>
-      <div>
-        <img src={Simple3}  className="image_slider" alt="not image"/>
-        <h3>Внешний вид</h3>
-      </div>
-      <div>
-        <img src={SimpleCod1}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod2}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod3}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod4}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod5}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod6}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod7}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={SimpleCod8}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-    </Slider>
+    <div className="slide-container">
+      <Zoom {...zoomOutProperties}>
+        {images.map((each, index) => (
+          <img key={index} style={{ height: "70%" }} src={each} />
+        ))}
+      </Zoom>
+    </div>
+  );
+};
+
+function SimpleSliderSimple() {
+  return (
+    <div className="App">
+      <Slideshow />
+    </div>
   );
 }
+
+export default SimpleSliderSimple;

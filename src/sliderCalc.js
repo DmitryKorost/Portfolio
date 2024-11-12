@@ -1,36 +1,40 @@
-import Slider from "react-slick";
 import './slider.css';
 import Calkulator from './imageProject/Calkulator.jpg';
 import CalkulatorCod1 from './imageProject/CalkulatorCod1.jpg';
 import CalkulatorCod2 from './imageProject/CalkulatorCod2.jpg';
 import CalkulatorCod3 from './imageProject/CalkulatorCod3.jpg';
 
-export default function SimpleSliderCalc() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+const images = [Calkulator, CalkulatorCod1, CalkulatorCod2, CalkulatorCod3];
+
+const zoomOutProperties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  scale: 0.4,
+  arrows: true
+};
+
+const Slideshow = () => {
   return (
-    <Slider {...settings} >
-      <div>
-        <img src={Calkulator} className="image_slider"/>
-        <h3>Внешний вид</h3>
-      </div>
-      <div>
-        <img src={CalkulatorCod1}  className="image_slider"  alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={CalkulatorCod2}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-      <div>
-        <img src={CalkulatorCod3}  className="image_slider" alt="not image"/>
-        <h3>Код</h3>
-      </div>
-    </Slider>
+    <div className="slide-container">
+      <Zoom {...zoomOutProperties}>
+        {images.map((each, index) => (
+          <img key={index} style={{ height: "70%" }} src={each} />
+        ))}
+      </Zoom>
+    </div>
+  );
+};
+
+function SimpleSliderCalc() {
+  return (
+    <div className="App">
+      <Slideshow />
+    </div>
   );
 }
+
+export default SimpleSliderCalc;

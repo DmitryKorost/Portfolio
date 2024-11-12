@@ -1,4 +1,3 @@
-import Slider from "react-slick";
 import './slider.css';
 import Simple1 from './imageProject/Simple1.jpg';
 import Simple2 from './imageProject/Simple2.jpg';
@@ -7,40 +6,37 @@ import Learn1 from './imageProject/Learn1.jpg';
 import Learn2 from './imageProject/Learn2.jpg';
 import Calkulator from './imageProject/Calkulator.jpg';
 
-export default function SimpleSlider() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+const images = [Simple1, Simple2, Simple3, Learn1, Learn2, Calkulator];
+
+const zoomOutProperties = {
+  duration: 5000,
+  transitionDuration: 500,
+  infinite: true,
+  indicators: true,
+  scale: 0.4,
+  arrows: true
+};
+
+const Slideshow = () => {
   return (
-    <Slider {...settings} >
-      <div>
-        <img src={Simple1} className="image_slider" alt ="not image"/>
-        <h3>Простой стартовый шаблон</h3>
-      </div>
-      <div>
-        <img src={Simple2}  className="image_slider" alt ="not image"/>
-        <h3>Простой стартовый шаблон</h3>
-      </div>
-      <div>
-        <img src={Simple3}  className="image_slider" alt ="not image"/>
-        <h3>Простой стартовый шаблон</h3>
-      </div>
-      <div>
-        <img src={Learn1}  className="image_slider" alt ="not image"/>
-        <h3>Научится учится</h3>
-      </div>
-      <div>
-        <img src={Learn2}  className="image_slider" alt ="not image"/>
-        <h3>Научится учится</h3>
-      </div>
-      <div>
-        <img src={Calkulator}  className="image_slider" alt ="not image"/>
-        <h3>Калькулятор</h3>
-      </div>
-    </Slider>
+    <div className="slide-container">
+      <Zoom {...zoomOutProperties}>
+        {images.map((each, index) => (
+          <img key={index} style={{ height: "70%" }} src={each} />
+        ))}
+      </Zoom>
+    </div>
+  );
+};
+
+function SimpleSlider() {
+  return (
+    <div className="App">
+      <Slideshow />
+    </div>
   );
 }
+
+export default SimpleSlider;
