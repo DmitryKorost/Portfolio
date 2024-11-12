@@ -1,5 +1,5 @@
 import './Content.css';
-import SimpleSlider from './slider';
+import SimpleSlider from './slider.js';
 
 function ContentHomePage() {
     return (
