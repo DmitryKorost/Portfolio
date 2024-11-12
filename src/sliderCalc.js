@@ -21,15 +21,15 @@ export default function SimpleSliderCalc() {
         <h3>Внешний вид</h3>
       </div>
       <div>
-        <img src={CalkulatorCod1}  className="image_slider"/>
+        <img src={CalkulatorCod1}  className="image_slider"  alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={CalkulatorCod2}  className="image_slider"/>
+        <img src={CalkulatorCod2}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={CalkulatorCod3}  className="image_slider"/>
+        <img src={CalkulatorCod3}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
     </Slider>
