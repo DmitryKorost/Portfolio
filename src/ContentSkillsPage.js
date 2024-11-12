@@ -21,12 +21,12 @@ function ContentSkillsPage() {
           </ul>
           <p>Мои навыки были применены в написании калькуляторв и создании верстки сайтов.</p>
           <div className='imge'>
-            <img src={HTML} className='image-icon'/>
-            <img src={CSS} className='image-icon'/>
-            <img src={JS} className='image-icon'/>
-            <img src={GIT} className='image-icon'/>
-            <img src={VUE} className='image-icon'/>
-           <img src={React} className='image-icon'/>
+            <img src={HTML} className='image-icon' alt="not image"/>
+            <img src={CSS} className='image-icon' alt="not image"/>
+            <img src={JS} className='image-icon' alt="not image"/>
+            <img src={GIT} className='image-icon' alt="not image"/>
+            <img src={VUE} className='image-icon' alt="not image"/>
+           <img src={React} className='image-icon' alt="not image"/>
           </div>          
       </div>
            
