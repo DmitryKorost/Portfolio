@@ -19,27 +19,27 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings} >
       <div>
-        <img src={Simple1} className="image_slider"/>
+        <img src={Simple1} className="image_slider" alt ="not image"/>
         <h3>Простой стартовый шаблон</h3>
       </div>
       <div>
-        <img src={Simple2}  className="image_slider"/>
+        <img src={Simple2}  className="image_slider" alt ="not image"/>
         <h3>Простой стартовый шаблон</h3>
       </div>
       <div>
-        <img src={Simple3}  className="image_slider"/>
+        <img src={Simple3}  className="image_slider" alt ="not image"/>
         <h3>Простой стартовый шаблон</h3>
       </div>
       <div>
-        <img src={Learn1}  className="image_slider"/>
+        <img src={Learn1}  className="image_slider" alt ="not image"/>
         <h3>Научится учится</h3>
       </div>
       <div>
-        <img src={Learn2}  className="image_slider"/>
+        <img src={Learn2}  className="image_slider" alt ="not image"/>
         <h3>Научится учится</h3>
       </div>
       <div>
-        <img src={Calkulator}  className="image_slider"/>
+        <img src={Calkulator}  className="image_slider" alt ="not image"/>
         <h3>Калькулятор</h3>
       </div>
     </Slider>
