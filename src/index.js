@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ResponsiveAppBar from './Menu';
-import ContentHomePage from './ContentHomePage';
-import ContentProjectPage from './ContentProjectPage';
-import ContentSkillsPage from './ContentSkillsPage';
-import ContentContactPage from './ContentContactPage';
+import ResponsiveAppBar from './Menu.js';
+import ContentHomePage from './ContentHomePage.js';
+import ContentProjectPage from './ContentProjectPage.js';
+import ContentSkillsPage from './ContentSkillsPage.js';
+import ContentContactPage from './ContentContactPage.js';
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
