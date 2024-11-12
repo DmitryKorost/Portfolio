@@ -4,7 +4,7 @@ import Fon from './image/Монитор.jpg';
 function App() {
   return (
     <div>
-        <img src={Fon} className="App-logo" align="right" />
+        <img src={Fon} className="App-logo" align="right" alt ="not image"/>
     </div>
   );
 }
