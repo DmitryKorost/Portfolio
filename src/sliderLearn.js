@@ -18,23 +18,23 @@ export default function SimpleSliderLearn() {
   return (
     <Slider {...settings} >
       <div>
-        <img src={Learn1} className="image_slider"/>
+        <img src={Learn1} className="image_slider" alt="not image"/>
         <h3>Внешний вид</h3>
       </div>
       <div>
-        <img src={Learn2}  className="image_slider"/>
+        <img src={Learn2}  className="image_slider" alt="not image"/>
         <h3>Внешний вид</h3>
       </div>
       <div>
-        <img src={LearnCod1}  className="image_slider"/>
+        <img src={LearnCod1}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={LearnCod2}  className="image_slider"/>
+        <img src={LearnCod2}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
       <div>
-        <img src={LearnCod3}  className="image_slider"/>
+        <img src={LearnCod3}  className="image_slider" alt="not image"/>
         <h3>Код</h3>
       </div>
     </Slider>
