@@ -1,7 +1,7 @@
 import './Content.css';
-import SimpleSliderSimple from './sliderSimle';
-import SimpleSliderLearn from './sliderLearn';
-import SimpleSliderCalc from './sliderCalc';
+import SimpleSliderSimple from './sliderSimle.js';
+import SimpleSliderLearn from './sliderLearn.js';
+import SimpleSliderCalc from './sliderCalc.js';
 import Link from '@mui/material/Link';
 
 function ContentProjectPage() {
