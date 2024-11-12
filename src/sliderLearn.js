@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import './slider.css';
 import Learn1 from './imageProject/Learn1.jpg';

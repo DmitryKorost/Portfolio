@@ -34,7 +34,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href="/"
@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="secondary"
             >
               <MenuIcon />
             </IconButton>
@@ -80,8 +80,8 @@ function ResponsiveAppBar() {
             >
               {pages.map((page, index) => (
                 <MenuItem key={page}>
-                  <Typography sx={{ textAlign: 'center' }}>
-                    <Link  style={{textDecoration: 'none'}} color="inherit" href={`/${paths[index]}`}>{page} </Link>
+                  <Typography sx={{ textAlign: 'center'} } >
+                    <Link variant='h4' style={{textDecoration: 'none'}} color="inherit" href={`/${paths[index]}`}>{page} </Link>
                   </Typography>
                 </MenuItem>
               ))}
@@ -99,7 +99,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'warning',
               textDecoration: 'none',
             }}
           >
@@ -111,7 +111,7 @@ function ResponsiveAppBar() {
                 key={page}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link  style={{textDecoration: 'none'}} color="inherit" href={`/${paths[index]}`}>{page} </Link>
+                <Link variant='h4' style={{textDecoration: 'none'}} color="inherit" href={`/${paths[index]}`}>{page} </Link>
                 
               </Button>
             ))}

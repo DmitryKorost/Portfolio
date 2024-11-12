@@ -1,5 +1,5 @@
 import './App.css';
-import Fon from './image/Монитор.jpg';
+import Fon from './image/Monitor.jpg';
 
 function App() {
   return (

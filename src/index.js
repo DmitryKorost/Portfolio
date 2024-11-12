@@ -8,7 +8,6 @@ import ContentHomePage from './ContentHomePage.js';
 import ContentProjectPage from './ContentProjectPage.js';
 import ContentSkillsPage from './ContentSkillsPage.js';
 import ContentContactPage from './ContentContactPage.js';
-import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -35,11 +34,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <ResponsiveAppBar/>
